@@ -1,10 +1,10 @@
-#一、Python版
-###使用的是TensorRT 7.0官方python用例，主要包括一下几个过程
+# 一、Python版
+### 使用的是TensorRT 7.0官方python用例，主要包括一下几个过程
 - 1.将Darknet得到的cfg和weights文件转换成onnx模型
 - 2.使用onnx模型生成.trt文件并对图片进行检测
 - 3.切换FP16
 
-##1.Darknet-->ONNX
+## 1.Darknet-->ONNX
 **python yolov3_to_onnx.py**
   首先得安装onnx，pip安装即可,然后修改py文件中的一些参数，包括cfg文件、weights文件的路径，以及输出向量的大小等：
 ![修改py文件中的一些参数](https://upload-images.jianshu.io/upload_images/5955013-b7ab7d3c75858a6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
